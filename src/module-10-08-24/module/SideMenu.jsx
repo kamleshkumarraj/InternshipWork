@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom"
 function SideMenu() {
     const navHandler = (status) => status ? 'bg-[#807d7e22] rounded-[5px] ' : '';
   return (
-    <div className="w-[20%] md:pr-[60px] pr-[20px]" id="sidemenu">
+    <div className="w-[350px] hidden xl:block md:pr-[60px] pr-[20px] bg-[#ffffff]" id="sidemenu">
     <div id="menu" className="flex flex-col 2xl:mt-[40px] xl:mt-[36px] lg:mt-[32px] md:mt-[30px] sm:mt-[27px] mt-[25px] gap-[20px] xl:px-[70px] px-[40px] md:py-[40px] py-[20px]">
         <NavLink to={'/dashbord'} className={(status) => navHandler(status.isActive)+'2xl:w-[260px] xl:w-[250px] sm:w-[220px] w-[180px]  md:w-[full] h-[58px] flex items-center gap-[15px] px-[40px]'}>
             <div id="icon"><MdOutlineDashboard size={'30px'} color="#807D7E" /></div>

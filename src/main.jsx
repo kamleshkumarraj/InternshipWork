@@ -5,9 +5,10 @@ import './index.css'
 import { createBrowserRouter , RouterProvider } from 'react-router-dom'
 import AddProducts from './module-10-08-24/module/addproducts/components/AddProducts.jsx'
 import Orders from './module-10-08-24/module/orders/components/Orders.jsx'
+
+import Dashbord from './module-10-08-24/module/Dashbord.jsx'
 import Products from './module-10-08-24/module/products/components/Products.jsx'
 import Customers from './module-10-08-24/module/customers/components/Customers.jsx'
-import Dashbord from './module-10-08-24/module/Dashbord.jsx'
 
 const router = createBrowserRouter([{
   path : '/',
