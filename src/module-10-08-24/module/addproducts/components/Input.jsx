@@ -1,4 +1,5 @@
 
+// eslint-disable-next-line react/prop-types
 function Input({lable , placeholder , type}) {
   return (
     <div className="w-full" id="custom-input-field">
