@@ -32,6 +32,10 @@ const router = createBrowserRouter([{
     {
       path : '/customers',
       element : <Customers />
+    },
+    {
+      path : '/products/add-products',
+      element : <AddProducts />
     }
   ]
   

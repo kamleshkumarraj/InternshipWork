@@ -1,6 +1,7 @@
 import { CiSearch } from "react-icons/ci"
 import Button from "./Button"
 import ProductTable from "./ProductTable"
+import { Link } from "react-router-dom"
 
 function Products() {
   return (
@@ -8,9 +9,9 @@ function Products() {
       <div id="product-header" className="flex items-center justify-between w-full">
         <h1 className="font-[Inter] text-left font-[500] 2xl:text-[23.78px] xl:text-[22px] lg:text-[21px] md:text-[20px] sm:text-[19px] text-[18px] 2xl:leading-[28.78px] xl:leading-[26px] lg:leading-[24px] md:leading-[22px] sm:leading-[20px] leading-[18px]" id="header">Products</h1>
         <div id="btn-search" className="flex gap-[20px] w-[504px]">
-          <div id="btn">
+          <Link to={'/products/add-products'} id="btn">
             <Button />
-          </div>
+          </Link>
           <div id="search" className="border-[1px] border-[#0000001f] flex gap-[10px] items-center px-[15px] rounded-[8px]">
             <CiSearch size={'30px'}/>
             <input className="focus:outline-none focus:border-none" type="text" placeholder="Search products"/>
